@@ -11,6 +11,7 @@ public class ProductService {
 
     @Autowired
     private  ProductRepository productRepository;
+    @Transactional
     public  void addTenProduct(){
         for (int i=0;i<10;i++){
             productRepository.addProduct("Product"+i);
